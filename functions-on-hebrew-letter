@@ -1,0 +1,13 @@
+//find the letters from the charCode
+
+function findCharCode(letter) {
+  for (let i = 0; i < hebrewLetters.length; i++) {
+    const obj = hebrewLetters[i];
+    if (obj[letter]) {
+      return obj[letter];
+    }
+  }
+  return null; // return null if letter is not found
+}
+
+console.log(findCharCode("bet")); // output: 1489
